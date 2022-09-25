@@ -1,0 +1,12 @@
+en:
+  desctiption:
+    title: Title
+    memo: Memo
+    author: Author
+    picture: Picture
+  option:
+    back: Back
+  helpers:
+    submit:
+      create: Create
+      update: Update

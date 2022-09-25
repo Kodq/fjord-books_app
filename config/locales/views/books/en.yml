@@ -1,0 +1,17 @@
+en:
+  books:
+    index: 
+      books: books
+      show: show
+      edit: edit
+      destroy: destroy
+      newbook: New book
+      confirm: Are you ok?
+    show:
+      edit: edit
+      back: back
+    edit:
+      title: editing book
+      show: show
+    new:
+      newbook: 新規作成
