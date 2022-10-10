@@ -9,6 +9,14 @@ ja:
         memo: メモ  #g
         picture: 画像  #g
         title: 題名  #g
+  activerecord:
+    models:
+      user:
+    attributes:
+      user:
+        postalcode: 郵便番号
+        address: 住所
+        introduction: 自己紹介
   head:
     editprofile: プロフィールを変更する
     logout: ログアウト
@@ -24,6 +32,8 @@ ja:
     alluser: ユーザ一覧
     user: ユーザーページ
     forgot: パスワードを忘れましたか？
+    edituser: 情報を変更
+    delete: アカウントを削除
   userpage:
     mail: メールアドレス
     postalcode: 郵便番号
@@ -32,5 +42,14 @@ ja:
     password: 文字以上にしてください
   passwordreset:
     reset: パスワードリセットのメールを送る
+  edit:
+    notchange: パスワードを変更しない場合入力しないでください。
+    password: 文字以上にしてください
+    confirm: 情報を変更する場合現在のパスワードを入力してください
+    update: 変更
+    unhappy: アカウントを消去する場合はしたのボタンを押してください
+    cancel: アカウント削除
+    back: 戻る
+
 
 
