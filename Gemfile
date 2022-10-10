@@ -62,3 +62,10 @@ gem 'net-smtp'
 
 gem 'carrierwave'
 gem 'kaminari'
+gem 'devise'
+gem 'devise-i18n'
+
+group :development do
+  gem 'letter_opener_web', '~> 1.0'
+end
+
