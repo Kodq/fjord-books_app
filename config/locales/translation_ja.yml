@@ -32,7 +32,7 @@ ja:
     alluser: ユーザ一覧
     user: ユーザーページ
     forgot: パスワードを忘れましたか？
-    edituser: 情報を変更
+    edituser: プロフィールを変更
     delete: アカウントを削除
   userpage:
     mail: メールアドレス
