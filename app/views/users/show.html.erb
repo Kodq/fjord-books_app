@@ -1,7 +1,7 @@
-<h1>ユーザーページ</h1>
+<h1><%= t('title.user') %></h1>
 
-<p>メールアドレス <%= @user.email %></p>
+<p><strong><%= t('userpage.mail') %></strong>: <%= @user.email %></p>
 
-<p>郵便番号 <%= @user.postalcode %> </p>
+<p><strong><%= t('userpage.postalcode') %></strong>: <%= @user.postalcode %> </p>
 
-<p>自己紹介 <%= @user.introduction %> </p>
+<p><strong><%= t('userpage.introduction') %></strong>: <%= @user.introduction %> </p>

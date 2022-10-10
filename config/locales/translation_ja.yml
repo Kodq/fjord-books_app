@@ -9,3 +9,28 @@ ja:
         memo: メモ  #g
         picture: 画像  #g
         title: 題名  #g
+  head:
+    editprofile: プロフィールを変更する
+    logout: ログアウト
+    userlist: ユーザー一覧
+    mypage: マイページ
+    signup: アカウント作成
+    login: ログイン
+    forgot: パスワードを忘れましたか？
+    account: アカウント
+  title:
+    login: ログイン
+    signup: アカウント作成
+    alluser: ユーザ一覧
+    user: ユーザーページ
+    forgot: パスワードを忘れましたか？
+  userpage:
+    mail: メールアドレス
+    postalcode: 郵便番号
+    introduction: 自己紹介
+  signup:
+    password: 文字以上にしてください
+  passwordreset:
+    reset: パスワードリセットのメールを送る
+
+
