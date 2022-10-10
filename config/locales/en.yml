@@ -1,0 +1,21 @@
+en:
+  activerecord:
+    models:
+      book:
+    attributes:
+      book:
+        title: title
+        memo: memo
+        author: author
+        picture: picture
+  menu:
+    show: show
+    edit: edit
+    back: back
+    destory: destory
+    newbook: newbook
+    confirm: Are you ok?
+  title:
+    booklist: booklist
+    newbook: newbook
+    editing: edit
