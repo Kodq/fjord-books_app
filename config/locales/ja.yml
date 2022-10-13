@@ -1,0 +1,31 @@
+ja:
+  activerecord:
+    models:
+      book:
+    attributes:
+      book:
+        title: タイトル
+        memo: メモ
+        author: 著者
+        picture: 写真
+  helpers:
+    submit:
+      create: "登録する"
+      update: "更新する"
+  menu:
+    show: 詳細
+    edit: 編集
+    back: 戻る
+    destory: 削除
+    newbook: 新しい本を登録
+    confirm: 本当に削除して良いですか
+  books:
+    index:
+      title: 本一覧
+    new:
+      title: 新しい本を登録
+    edit:
+      title: 編集
+
+  
+  
