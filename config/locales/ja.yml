@@ -7,7 +7,7 @@ ja:
         title: タイトル
         memo: メモ
         author: 著者
-        picture: 本
+        picture: 写真
   helpers:
     submit:
       create: "登録する"
@@ -19,9 +19,13 @@ ja:
     destory: 削除
     newbook: 新しい本を登録
     confirm: 本当に削除して良いですか
-  title:
-    booklist: 本一覧
-    newbook: 新しい本を登録
-    editing: 編集
+  books:
+    index:
+      title: 本一覧
+    new:
+      title: 新しい本を登録
+    edit:
+      title: 編集
+
   
   
