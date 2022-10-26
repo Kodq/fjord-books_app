@@ -1,4 +1,4 @@
-<h2><%= t('title.edituser') %></h2>
+<h2><%= t('.title') %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -51,8 +51,8 @@
   </div>
 <% end %>
 
-<h3><%= t('title.delete') %></h3>
+<h3><%= t('.delete') %></h3>
 
-<p><%= t('edit.unhappy') %> <%= button_to t("edit.cancel"), registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p><%= t('edit.unhappy') %> <%= button_to t("edit.cancel"), registration_path(resource_name), data: { confirm: t("edit.ok") }, method: :delete %></p>
 
 <%= link_to t("edit.back"), :back %>

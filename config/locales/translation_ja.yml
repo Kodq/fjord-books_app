@@ -2,7 +2,6 @@ ja:
   activerecord:
     models:
       book: 本  #g
-
     attributes:
       book:
         author: 著者  #g
@@ -17,27 +16,45 @@ ja:
         postalcode: 郵便番号
         address: 住所
         introduction: 自己紹介
+
+  layouts:
+    application:
+      editprofile: プロフィールを変更する
+      logout: ログアウト
+      userlist: ユーザー一覧
+      mypage: マイページ
+      account: アカウント
+      signup: アカウント作成
+      forgot: パスワードを忘れましたか？
+      login: ログイン
+
+  users:
+    show:
+      title: ユーザーページ
+      mail: メールアドレス
+      postalcode: 郵便番号
+      address: 住所
+      introduction: 自己紹介
+    index:
+      title: ユーザー一覧
+  devise:
+    passwords:
+      new:
+        title: パスワードを忘れましたか？
+    registrations:
+      edit:
+        title: プロフィールを変更
+        delete: アカウントを削除
+      new:
+        title: アカウント作成
+    sessions:
+      new:
+        title: ログイン
+
   head:
-    editprofile: プロフィールを変更する
-    logout: ログアウト
-    userlist: ユーザー一覧
-    mypage: マイページ
     signup: アカウント作成
     login: ログイン
-    forgot: パスワードを忘れましたか？
-    account: アカウント
-  title:
-    login: ログイン
-    signup: アカウント作成
-    alluser: ユーザ一覧
-    user: ユーザーページ
-    forgot: パスワードを忘れましたか？
-    edituser: プロフィールを変更
-    delete: アカウントを削除
-  userpage:
-    mail: メールアドレス
-    postalcode: 郵便番号
-    introduction: 自己紹介
+    forgot: パスワードを忘れましたか
   signup:
     password: 文字以上にしてください
   passwordreset:
@@ -50,6 +67,7 @@ ja:
     unhappy: アカウントを消去する場合はしたのボタンを押してください
     cancel: アカウント削除
     back: 戻る
+    ok: 本当にいいですか？
 
 
 

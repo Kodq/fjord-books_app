@@ -12,14 +12,14 @@
   <body>
   <p class="navbar-text pull-right">
     <% if user_signed_in? %>
-      <%= t('head.account') %> : <strong><%= current_user.email %></strong>.
-      <%= link_to t('head.editprofile'), edit_user_registration_path, class: 'navbar-link' %> |
-      <%= link_to t("head.logout"), destroy_user_session_path, method: :delete, class: 'navbar-link' %> |
-      <%= link_to t('head.userlist'), users_path, class: 'navbar-link' %> |
-      <%= link_to t('head.mypage'), user_path(current_user), class: 'navbar-link' %> |
+      <%= t('.account') %> : <strong><%= current_user.email %></strong>.
+      <%= link_to t('.editprofile'), edit_user_registration_path, class: 'navbar-link' %> |
+      <%= link_to t(".logout"), destroy_user_session_path, method: :delete, class: 'navbar-link' %> |
+      <%= link_to t('.userlist'), users_path, class: 'navbar-link' %> |
+      <%= link_to t('.mypage'), user_path(current_user), class: 'navbar-link' %> |
     <% else %>
-      <%= link_to t("head.signup"), new_user_registration_path, class: 'navbar-link' %> |
-      <%= link_to t("head.login"), new_user_session_path, class: 'navbar-link' %>
+      <%= link_to t(".signup"), new_user_registration_path, class: 'navbar-link' %> |
+      <%= link_to t(".login"), new_user_session_path, class: 'navbar-link' %>
     <% end %>
   </p>
   <% if notice %>
