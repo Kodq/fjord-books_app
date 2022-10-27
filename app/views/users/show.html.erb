@@ -1,9 +1,9 @@
 <h1><%= t('.title') %></h1>
 
-<p><strong><%= t('.mail') %></strong>: <%= @user.email %></p>
+<p><strong><%= User.human_attribute_name(:mail) %></strong>: <%= @user.email %></p>
 
-<p><strong><%= t('.postalcode') %></strong>: <%= @user.postalcode %> </p>
+<p><strong><%= User.human_attribute_name(:postalcode) %></strong>: <%= @user.postalcode %> </p>
 
-<p><strong><%= t('.address') %></strong>: <%= @user.address %> </p>
+<p><strong><%= User.human_attribute_name(:address) %></strong>: <%= @user.address %> </p>
 
-<p><strong><%= t('.introduction') %></strong>: <%= @user.introduction %> </p>
+<p><strong><%= User.human_attribute_name(:introduction) %></strong>: <%= @user.introduction %> </p>
