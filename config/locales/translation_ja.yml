@@ -32,10 +32,6 @@ ja:
   users:
     show:
       title: ユーザーページ
-      mail: メールアドレス
-      postalcode: 郵便番号
-      address: 住所
-      introduction: 自己紹介
     index:
       title: ユーザー一覧
   devise:
@@ -69,6 +65,3 @@ ja:
     cancel: アカウント削除
     back: 戻る
     ok: 本当にいいですか？
-
-
-
