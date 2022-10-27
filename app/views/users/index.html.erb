@@ -1,0 +1,10 @@
+<h1><%= t('.title') %></h1>
+<ul class="users">
+  <% @user.each do |user| %>
+    <li>
+      <%= link_to user.email, user %>
+    </li>
+  <% end %>
+</ul>
+
+<%= paginate @user %>
