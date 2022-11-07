@@ -2,10 +2,9 @@
 
 <p>
   <strong><%= User.human_attribute_name(:image) %>:</strong>
-    <% if @user.image.attached? %>
-      <td><%= image_tag @user.image.variant(resize_to_limit: [30, 30]) %></td>
-    <% else %>
-    <% end %>
+  <% if @user.image.attached? %>
+    <%= image_tag @user.image.variant(resize_to_limit: [30, 30]) %>
+  <% end %>
 </p>
 
 <p>
