@@ -11,13 +11,11 @@ class FollowsController < ApplicationController
     redirect_to request.referer
   end
 
-  # follower一覧
   def follower
     @user = User.find(params[:user_id])
     @following = user.followings
   end
 
-  # followed一覧
   def followed
     @user = User.find(params[:user_id])
     @follower = user.followers
