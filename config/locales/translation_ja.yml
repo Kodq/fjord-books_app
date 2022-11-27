@@ -6,9 +6,9 @@ ja:
       followers: フォロワー数
       followings: フォロー数
     followers:
-      follower_list: フォロワー数
+      follower_list: フォロワー一覧
     followings: 
-      following_list: フォロー数
+      following_list: フォロー一覧
   activerecord:
     models:
       book: 本  #g
