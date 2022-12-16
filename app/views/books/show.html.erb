@@ -25,11 +25,19 @@
 <% if @comments.exists?%>
 <ul>
 <% @comments.each do |comment| %>
-  <li> <%= comment.comment %> <%= comment.user.email %> <%= comment.created_at.strftime('%Y/%m/%d %H:%M:%S')%> </li> 
+  <li> 
+    <%= comment.comment %> 
+    <%if comment.user.name.present? %>
+      <%= comment.user.name %>
+    <% else %>
+      <%= comment.user.email %>
+    <% end %> 
+    <%= comment.created_at.strftime('%Y/%m/%d %H:%M:%S')%> 
+  </li> 
 <% end %>
 <ul>
 <% else %>
-  <p>コメントがありません</p>
+  <p><%= t(".comment") %></p>
 <% end %>
 
 <%= link_to t('views.common.edit'), edit_book_path(@book) %> |
