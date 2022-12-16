@@ -20,20 +20,20 @@
   <%= image_tag(@book.picture_url) if @book.picture.present? %>
 </p>
 
-<%= render 'comments/form', commentable: @book, comment: @comments %> 
+<%= render 'comments/form', commentable: @book, comment: @comments %>
 
-<% if @comments.exists?%>
+<% if @comments.exists? %>
 <ul>
 <% @comments.each do |comment| %>
-  <li> 
-    <%= comment.comment %> 
-    <%if comment.user.name.present? %>
+  <li>
+    <%= comment.comment %>
+    <% if comment.user.name.present? %>
       <%= comment.user.name %>
     <% else %>
       <%= comment.user.email %>
-    <% end %> 
-    <%= comment.created_at.strftime('%Y/%m/%d %H:%M:%S')%> 
-  </li> 
+    <% end %>
+    <%= comment.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
+  </li>
 <% end %>
 <ul>
 <% else %>
