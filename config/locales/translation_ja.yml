@@ -17,3 +17,28 @@ ja:
         address: 住所
         self_introduction: 自己紹介文
         avatar: ユーザ画像
+      report:
+        title: タイトル
+        text: テキスト
+        create_at: 作成日時
+  reports:
+    index:
+      show: 詳細
+      edit: 編集
+      destroy: 削除
+      confirm: 本当に消していいですか？
+      new: 新規作成
+    new:
+      title: 日報を作成
+    edit:
+      title: 日報を編集
+    show:
+      comment: コメントがありません
+  menu:
+    edit: 編集
+    back: 戻る
+    show: 詳細
+
+  
+
+    

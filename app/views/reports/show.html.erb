@@ -2,18 +2,38 @@
 
 <p>
   <strong>作成日時</strong>
-  <%= @report.created_at %>
+  <%= @report.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
 </p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= Report.human_attribute_name(:title) %>:</strong>
   <%= @report.title %>
 </p>
 
 <p>
-  <strong>Text:</strong>
+  <strong><%= Report.human_attribute_name(:text) %>:</strong>
   <%= @report.text %>
 </p>
 
-<%= link_to 'Edit', edit_report_path(@report) %> |
-<%= link_to 'Back', reports_path %>
+<%= render 'comments/form', commentable: @report, comment: @comments %> 
+
+<% if @comments.exists?%>
+<ul>
+<% @comments.each do |comment| %>
+  <li> 
+    <%= comment.comment %> 
+    <%if comment.user.name.present? %>
+      <%= comment.user.name %>
+    <% else %>
+      <%= comment.user.email %>
+    <% end %> 
+    <%= comment.created_at.strftime('%Y/%m/%d %H:%M:%S')%> 
+  </li> 
+<% end %>
+<ul>
+<% else %>
+  <p><%= t(".comment") %></p>
+<% end %>
+
+<%= link_to t('menu.edit'), edit_report_path(@report) %> |
+<%= link_to t('menu.back'), reports_path %>
