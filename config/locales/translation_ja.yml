@@ -1,4 +1,14 @@
 ja:
+  users:
+    show:
+      follow: フォローする
+      unfollow: フォローを外す
+      followers: フォロワー数
+      followings: フォロー数
+    followers:
+      follower_list: フォロワー一覧
+    followings: 
+      following_list: フォロー一覧
   activerecord:
     models:
       book: 本  #g
@@ -16,3 +26,5 @@ ja:
         address: 住所
         self_introduction: 自己紹介文
         avatar: ユーザ画像
+        follow: フォローする
+        unfollow: フォローを外す
