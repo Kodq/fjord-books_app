@@ -5,6 +5,6 @@ ja:
       no_change: "メッセージの更新ができません。"
     destroy:
       report_destroy: "日報を削除しました。"
-      no_destory: "日報を削除できませんでした。"
+      no_destroy: "日報を削除できませんでした。"
     create:
       report_create: "日報の作成に成功しました"

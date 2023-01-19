@@ -45,17 +45,20 @@ class ReportsController < ApplicationController
         render :edit
       end
     else
-      redirect_to reports_path
+      redirect_to report_url
     end
   end
 
   # DELETE /reports/1 or /reports/1.json
   def destroy
     if @report.user_id == current_user.id
-      @report.destroy
-      redirect_to reports_path, notice: t('.report_destroy')
+      if @report.destroy
+        redirect_to reports_url, notice: t('.report_destroy')
+      else
+        redirect_to reports_url, notice: t('.no_destroy')
+      end
     else
-      redirect_to reports_path notice: t('.no_destroy')
+      redirect_to reports_url, notice: t('.no_destroy')
     end
   end
 

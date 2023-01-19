@@ -21,6 +21,8 @@ ja:
         title: タイトル
         text: テキスト
         create_at: 作成日時
+  _comment_list:
+    nocomment: コメントがありません
   reports:
     index:
       show: 詳細
@@ -32,14 +34,9 @@ ja:
       title: 日報を作成
     edit:
       title: 日報を編集
-    show:
-      nocomment: コメントがありません
     form:
       error: エラー
       prohibited: エラーによってこのレポートの保存ができませんでした。
-  books:
-    show:
-      nocomment: コメントがありません
   menu:
     edit: 編集
     back: 戻る
