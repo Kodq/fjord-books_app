@@ -1,0 +1,10 @@
+ja:
+  reports:
+    update:
+      message_change: "メッセージの更新に成功しました。"
+      no_change: "メッセージの更新ができません。"
+    destroy:
+      report_destroy: "日報を削除しました。"
+      no_destory: "日報を削除できませんでした。"
+    create:
+      report_create: "日報の作成に成功しました"

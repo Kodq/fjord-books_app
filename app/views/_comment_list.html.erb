@@ -1,0 +1,17 @@
+<% if @comments.exists? %>
+<ul>
+<% @comments.each do |comment| %>
+  <li>
+    <%= comment.comment %>
+    <% if comment.user.name.present? %>
+      <%= comment.user.name %>
+    <% else %>
+      <%= comment.user.email %>
+    <% end %>
+    <%= I18n.l( comment.created_at, format: :long) %>
+  </li>
+<% end %>
+<ul>
+<% else %>
+  <p><%= t(".nocomment") %></p>
+<% end %>

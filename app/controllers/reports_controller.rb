@@ -10,9 +10,7 @@ class ReportsController < ApplicationController
 
   # GET /reports/1 or /reports/1.json
   def show
-    @report = Report.find(params[:id])
-    @comment = Comment.new
-    @comments = @report.comments
+    @comments = @report.comments.preload(:user)
   end
 
   # GET /reports/new
@@ -22,18 +20,17 @@ class ReportsController < ApplicationController
 
   # GET /reports/1/edit
   def edit
-    @report = Report.find(params[:id])
-    redirect_to report_path unless @report.userid == current_user.id
+    redirect_to report_url(@report) if @report.user_id != current_user.id
   end
 
   # POST /reports or /reports.json
   def create
     @report = Report.new(report_params)
 
-    @report.userid = current_user.id
+    @report.user_id = current_user.id
 
     if @report.save
-      redirect_to report_url(@report), notice: 'Report was successfully created.'
+      redirect_to report_url(@report), notice: t('.report_create')
     else
       render :new
     end
@@ -41,20 +38,24 @@ class ReportsController < ApplicationController
 
   # PATCH/PUT /reports/1 or /reports/1.json
   def update
-    if @report.update(report_params)
-      redirect_to report_url(@report), notice: 'Report was successfully updated.'
+    if @report.user_id == current_user.id
+      if @report.update(report_params)
+        redirect_to report_url(@report), notice: t('.message_change')
+      else
+        render :edit
+      end
     else
-      render :edit
+      redirect_to reports_path
     end
   end
 
   # DELETE /reports/1 or /reports/1.json
   def destroy
-    if @report.userid == current_user.id
+    if @report.user_id == current_user.id
       @report.destroy
-      redirect_to reports_url, notice: 'Report was successfully destroyed.'
+      redirect_to reports_path, notice: t('.report_destroy')
     else
-      redirect_to reports_path
+      redirect_to reports_path notice: t('.no_destroy')
     end
   end
 

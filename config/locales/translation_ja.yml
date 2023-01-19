@@ -33,12 +33,18 @@ ja:
     edit:
       title: 日報を編集
     show:
-      comment: コメントがありません
+      nocomment: コメントがありません
+    form:
+      error: エラー
+      prohibited: エラーによってこのレポートの保存ができませんでした。
+  books:
+    show:
+      nocomment: コメントがありません
   menu:
     edit: 編集
     back: 戻る
     show: 詳細
-
+  comments:
+    form:
+      comment: コメントする
   
-
-    
