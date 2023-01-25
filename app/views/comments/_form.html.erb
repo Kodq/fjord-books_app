@@ -1,5 +1,5 @@
 <%= form_with model: [commentable, Comment.new] do |f| %>
-  <%= f.text_area :comment , required: true %>
+  <%= f.text_area :comment %>
   <div class="actions">
     <%= f.submit t(".comment"), class: 'btn btn-warning px-5' %>
   </div>

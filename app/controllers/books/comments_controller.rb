@@ -6,7 +6,8 @@ class Books::CommentsController < ApplicationController
   def create
     @comment = @commentable.comments.build(comment_params)
     @comment.user_id = current_user.id
-    redirect_to book_url(@commentable) if @comment.save
+    @comment.save
+    redirect_to book_url(@commentable)
   end
 
   private

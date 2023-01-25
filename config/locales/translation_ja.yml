@@ -4,7 +4,6 @@ ja:
       book: 本  #g
       user: ユーザ
       report: 日報
-
     attributes:
       book:
         author: 著者  #g
@@ -21,12 +20,16 @@ ja:
         title: タイトル
         text: テキスト
         create_at: 作成日時
-  _comment_list:
-    nocomment: コメントがありません
   reports:
+    update:
+      message_change: "メッセージの更新に成功しました。"
+      no_change: "メッセージの更新ができません。"
+    destroy:
+      report_destroy: "日報を削除しました。"
+      no_destroy: "日報を削除できませんでした。"
+    create:
+      report_create: "日報の作成に成功しました"
     index:
-      show: 詳細
-      edit: 編集
       destroy: 削除
       confirm: 本当に消していいですか？
       new: 新規作成
@@ -42,6 +45,8 @@ ja:
     back: 戻る
     show: 詳細
   comments:
+    comment_list:
+      no_comment: コメントがありません
     form:
       comment: コメントする
   

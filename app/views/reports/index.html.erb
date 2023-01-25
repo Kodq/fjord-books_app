@@ -14,9 +14,9 @@
       <tr>
         <td><%= report.title %></td>
         <td><%= report.text %></td>
-        <td><%= link_to t('.show'), report_url(report) %></td>
+        <td><%= link_to t('menu.show'), report_url(report) %></td>
         <% if report.user_id == current_user.id %>
-          <td><%= link_to t('.edit'), edit_report_path(report) %></td>
+          <td><%= link_to t('menu.edit'), edit_report_path(report) %></td>
           <td><%= link_to t('.destroy'), report, method: :delete, data: { confirm: t(".confirm") } %></td>
         <% end %>
       </tr>

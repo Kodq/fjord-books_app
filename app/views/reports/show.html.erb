@@ -15,7 +15,7 @@
 
 <%= render 'comments/form', commentable: @report %>
 
-<%= render partial: '/comment_list' %>
+<%= render partial: 'comments/comment_list' %>
 
 <% if @report.user_id == current_user.id %>
   <%= link_to t('menu.edit'), edit_report_path(@report) %> |
