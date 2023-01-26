@@ -1,6 +1,6 @@
-<% if @comments.exists? %>
+<% if comments.exists? %>
 <ul>
-<% @comments.each do |comment| %>
+<% comments.each do |comment| %>
   <li>
     <%= comment.comment %>
     <% if comment.user.name.present? %>

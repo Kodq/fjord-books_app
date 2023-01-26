@@ -4,5 +4,5 @@ class Report < ApplicationRecord
   has_many :comments, as: :commentable, dependent: :destroy
   belongs_to :user
 
-  validates :user, presence: true
+  validates :title,:text, presence: true
 end
