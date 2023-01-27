@@ -1,0 +1,23 @@
+<p>
+  <strong><%= Report.human_attribute_name(:create_at) %>:</strong>
+  <%= I18n.l( @report.created_at, format: :long) %>
+</p>
+
+<p>
+  <strong><%= Report.human_attribute_name(:title) %>:</strong>
+  <%= @report.title %>
+</p>
+
+<p>
+  <strong><%= Report.human_attribute_name(:text) %>:</strong>
+  <%= @report.text %>
+</p>
+
+<%= render 'comments/form', commentable: @report %>
+
+<%= render  'comments/comment_list', comments: @comments %>
+
+<% if @report.user_id == current_user.id %>
+  <%= link_to t('menu.edit'), edit_report_path(@report) %> |
+<% end %>
+  <%= link_to t('menu.back'), reports_path %>
